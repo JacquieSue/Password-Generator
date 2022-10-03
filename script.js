@@ -1,37 +1,32 @@
 // Array of options for computer to pick from
-var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+var options = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var passwordLength = 20;
+var password = " ";
 
 // Assignment code here
-function genPassword(passwordLength) {
-  var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var passwordLength = 20;
-  var password = " ";
+var generatePassword = function() {
+  // Ask user for their choice
+var userChoice = window.prompt("How many characters would you like your password to contain?");
 
-  for (var i = 0; i < passwordLength; i++) {
-    var randomNumber = Math.floor(Math.random() * chars.length);
-    password += chars.substring(randomNumber, randomNumber + 1)
-  }
-
-  document.generatePassword("password").value = password;
-
+if (!userChoice) {
+return;
 }
 
-  // Get references to the #generate element
-  var generateBtn = document.querySelector("#generate");
-  var password = document.generatePassword("password");
-
-  // Write password to the #password input
-  function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
-
-    passwordText.value = password;
-
-  }
-
-  // Add event listener to generate button
-  generateBtn.addEventListener("click", writePassword);
+var userChoice = window.prompt("Click okay to confirm including special characters.");
 
 
-alert(genPassword)(20);
+var userChoice = window.prompt("Click okay to confirm including numeric characters");
+
+
+var userChoice = window.prompt("Click okay to confirm including lowercase characters");
+
+
+var userChoice = window.prompt("Click okay to confirm including uppercase characters");
+
+
+var index = Math.floor(Math.random() * options.length); 
+console.log(index);
+}
+
+generatePassword();  
+
