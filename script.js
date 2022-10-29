@@ -40,21 +40,20 @@ var generatePassword = function () {
     options.push(...numbers);
   }
   if (lower) {
-    options.push(...specialCharacters);
+    options.push(...lowerCase);
   }
 
   if (upper) {
-    options.push(...numbers);
+    options.push(...upperCase);
+  }
+  console.log(options)
+
+  for (var i = 0; i < passwordLength; i++) {
+    var options = Math.floor(Math.random() * options.length);
+    generatePassword = options.substring(options.random())
   }
 
-  // console.log(options)
-  // for (var i = 0; i < userChoice; i++) {
-  //   var passwordOptions = Math.floor(Math.random() * passwordOptions.length);
-  //   password += options.substring(randomNumber, randomNumber + 1);
-
-  // // }
-
-  return" ";
+  return " ";
 }
 
 
