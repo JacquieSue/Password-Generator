@@ -53,7 +53,5 @@ Jacquelyn Pulliam
 
 [GitHub](https://github.com/JacquieSue)
 
-[Contact Me](jspulliam87@yahoo.com)
-
 ## License
 MIT
