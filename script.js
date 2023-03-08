@@ -63,7 +63,7 @@ var getPasswordOptions = function () {
 
 
 var writePassword = function () {
-  var password = generatePassword()
+  var password = getPasswordOptions()
   var passwordText = document.querySelector("#password");
   passwordText.value = password
 }
